@@ -1,0 +1,43 @@
+
+header {
+    background-color: rgb(78, 101, 230);  /*color azul*/
+    padding: 20px;     /*Espacio interno*/
+    color: white;   /*color de texto en blanco*/
+    text-align: center;  /*Centra el texto dentro del header*/
+}
+
+header h2 {
+    margin-bottom: 15px;  /*Separa el titulo de la barra de navegacion*/
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;  /* separa la lista de los bontones*/
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;    /*para quitar los puntos de la lista*/
+    padding: 0;     /*elimina el padding por defecto*/
+    margin: 0;  /*separa a nav de los botones*/
+    display: flex;    /*convierte el flex de navegacion horizontal*/
+    gap: 10px;     /*Espacio entre inico, productos y carrito*/
+}
+
+nav ul li {
+    position: relative;   /*Permite colocar algo entre los li*/
+    padding: 0 20px;   /*agrega espacio antes y depues del texto*/
+}
+
+nav ul li:not(:last-child)::after {  /*seleccionamos todos los li menos el ultimo*/
+    content: "|";       /*para agregar la linea vertical entre  los li*/
+    position: absolute;     /*hace que el elemento linea vertical se coloque de manera absoluta respecto al que le sigue*/
+    right: -10px;           /*dice a la linea vertical que este pegado al borde derecho de su contenedor li, asi no queda pegada al texto*/
+    color: white;    /*Color de la linea igual que el texto*/
+}
+
+nav div {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;   /*alinea los botonoes a la izquierda*/
+}

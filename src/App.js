@@ -1,9 +1,9 @@
-
+import Header from "./Header";
 
 function App() {
   return (
     <div>
-      <h1>Tienda Virtual</h1>
+      <Header />
     </div>
   );
 }
