@@ -1,5 +1,43 @@
+.register-container{
+    width: 350px;
+    margin: 40px auto;      /*Centra horizontalmente*/
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
 
 .register-title {
     text-align: center;
-    padding-right: 5px;
+    padding: 50px;
+}
+
+/*Estilo para las etiquetas del formulario*/
+.register-form label {   /*con esto se seleccionan todos los label dentro del formulario*/
+    display: block;     /*Hace que el label cooupe toda la linea y tenga un slato de linea*/
+    margin-top: 10px;   /*Esta agrega un espacio encima del label para separar*/
+}
+
+/*Estilos para los campos donde el cliente ingresa los datos*/
+.register-form input {      /* Selecciono todos los input dentro del formulario*/
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;        /* pequeño espacio entre el label y el input que sigue*/
+    box-sizing: border-box;
+}
+
+.register-form button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*Este es el efecto visual al pasar el mouse sobre el botón*/
+.register-form button:hover {
+    background-color: #187bcd;
 }
