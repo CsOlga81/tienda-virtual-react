@@ -1,5 +1,6 @@
 /*importe NavLink que me permite aplicar estilo automático cuando esta activa la ruta*/
 import { NavLink, useNavigate, useLocation } from 'react-router-dom';
+import { FaShoppingCart, FaSearch, FaBars } from 'react-icons/fa';
 import './Header.css';
 
 function Header() {
@@ -17,6 +18,11 @@ function Header() {
                 <div>
                     <button className={location.pathname === "/login" ? "btn-active" : ""} onClick={() => navigate("/login")}>Inicia Sesión</button>
                     <button className={location.pathname === "/register" ? "btn-active" : ""} onClick={() => navigate("/register")}>Regístrate</button>
+                </div>
+                <div className='header-icons'>
+                    <FaSearch className="icon" />
+                    <FaShoppingCart className='icon' />
+                    <FaBars className='icon' />
                 </div>
             </nav>
         </header>

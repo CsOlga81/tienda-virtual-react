@@ -28,6 +28,8 @@ function Register() {
 
                 <button type='submit'>Registrarme</button>
 
+                <label>Ya estoy registrado</label>
+
             </form>
             
         </div>

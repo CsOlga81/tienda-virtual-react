@@ -38,6 +38,10 @@ ul li a.activo {
     font-weight: bold;  /* hace el texto mas visible y llamativo*/
 }
 
+ul li a:hover {
+    color: #ffd700;
+}
+
 nav ul li:not(:last-child)::after {  /*seleccionamos todos los li menos el ultimo*/
     content: "|";       /*para agregar la linea vertical entre  los li*/
     position: absolute;     /*hace que el elemento linea vertical se coloque de manera absoluta respecto al que le sigue*/
@@ -55,4 +59,20 @@ nav div {
     background-color: rgb(0, 217, 255); /*Color al presionar*/
     color: black;    /*Cambia el color del texto mientras se presiona*/
     transform: scale(0.96);  /*pequeño efecto de boton hundido*/
+}
+
+.header-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.icon {
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.icon:hover {
+    color: #ffd700;
 }
