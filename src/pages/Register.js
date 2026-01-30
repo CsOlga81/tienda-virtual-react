@@ -1,8 +1,9 @@
+import './Register.css';
 
 function Register() {
     return (
-        <div>
-            <h2>Regístrate</h2>
+        <div className="register-title">
+            <h1>Regístrate</h1>
         </div>
     );
 }

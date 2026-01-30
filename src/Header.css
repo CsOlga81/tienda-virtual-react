@@ -29,6 +29,15 @@ nav ul li {
     padding: 0 20px;   /*agrega espacio antes y depues del texto*/
 }
 
+ul li a {
+    color: white; /*para cambiar color de links*/
+}
+/*para resaltar el link que esta activo*/
+ul li a.activo {
+    color: rgb(0, 217, 255);
+    font-weight: bold;  /* hace el texto mas visible y llamativo*/
+}
+
 nav ul li:not(:last-child)::after {  /*seleccionamos todos los li menos el ultimo*/
     content: "|";       /*para agregar la linea vertical entre  los li*/
     position: absolute;     /*hace que el elemento linea vertical se coloque de manera absoluta respecto al que le sigue*/
@@ -40,4 +49,10 @@ nav div {
     display: flex;
     gap: 20px;
     justify-content: flex-start;   /*alinea los botonoes a la izquierda*/
+}
+/*Efecto del botoón al presionar*/
+.btn-active {
+    background-color: rgb(0, 217, 255); /*Color al presionar*/
+    color: black;    /*Cambia el color del texto mientras se presiona*/
+    transform: scale(0.96);  /*pequeño efecto de boton hundido*/
 }
